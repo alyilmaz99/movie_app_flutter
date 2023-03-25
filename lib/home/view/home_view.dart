@@ -13,19 +13,19 @@ class _HomePageViewState extends HomeViewModel {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromRGBO(36, 42, 50, 1),
+        backgroundColor: const Color.fromRGBO(36, 42, 50, 1),
         items: const [
           BottomNavigationBarItem(
-              icon: const Icon(Icons.home_outlined), label: 'Home'),
+              icon: Icon(Icons.home_outlined), label: 'Home'),
           BottomNavigationBarItem(
-              icon: const Icon(Icons.search_outlined), label: 'Search'),
+              icon: Icon(Icons.search_outlined), label: 'Search'),
           BottomNavigationBarItem(
-              icon: const Icon(Icons.favorite_outline), label: 'Watch List')
+              icon: Icon(Icons.favorite_outline), label: 'Watch List')
         ],
         currentIndex: selectedIndex,
         onTap: changeSelectedIndex,
-        selectedItemColor: Color.fromRGBO(2, 150, 229, 1),
-        unselectedItemColor: Color.fromRGBO(103, 104, 109, 1),
+        selectedItemColor: const Color.fromRGBO(2, 150, 229, 1),
+        unselectedItemColor: const Color.fromRGBO(103, 104, 109, 1),
       ),
     );
   }

@@ -14,7 +14,7 @@ class _WatchListViewState extends WatchListViewModel {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ,
+      backgroundColor: const Color.fromRGBO(36, 42, 50, 1),
       appBar: AppBar(
         title: const Text(
           'Watch List',
@@ -28,7 +28,7 @@ class _WatchListViewState extends WatchListViewModel {
           Container(
             child: Row(
               children: [
-                Image(image: ),
+                Image.asset('assets/images/movie-1.png'),
                 Column(),
               ],
             ),

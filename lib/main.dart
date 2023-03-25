@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app_flutter/home/view/home_view.dart';
+import 'package:movie_app_flutter/watchlist/view/watchlist_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePageView(),
+      home: const WatchListView(),
     );
   }
 }
